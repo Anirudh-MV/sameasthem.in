@@ -12,6 +12,7 @@ export interface Props {
 }
 
 import { nav } from '../config/nav.js';
+import { ThemeSwitcher } from '@components/theme-switcher/theme-switcher';
 
 const { seo } = Astro.props as Props;
 ---
@@ -21,7 +22,7 @@ const { seo } = Astro.props as Props;
 		<span slot="logo">
 			<Logo />
 		</span>
-		<Button slot="action-item" href="/theme/get-started">Get Started</Button>
+		<ThemeSwitcher slot="action-item" client:only />
 	</Header>
 	<div id="page">
 		<slot />

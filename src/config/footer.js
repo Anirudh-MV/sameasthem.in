@@ -1,24 +1,34 @@
 export const footerSocials = [
-  {
-    name: 'Twitter',
-    url: 'https://twitter.com/littlesticksdev',
-    icon: "mdi:twitter",
-  },
-  {
-    name: 'Youtube',
-    url: 'https://youtube.com/c/LittleSticks',
-    icon: "mdi:youtube",
-  },
-  {
-    name: 'Github',
-    url: 'https://github.com/littlesticks',
-    icon: "mdi:github",
-  },
-  {
-    name: 'Discord',
-    url: 'https://littlesticks.dev/discord',
-    icon: "ic:baseline-discord",
-  },
+	{
+		name: 'Spotify',
+		url: 'https://open.spotify.com/artist/5yJJaMHAPenWk7NrAfn5ut?si=1RMUjnz5Qt-6NXfMTLSbig',
+		icon: "mdi:spotify",
+	},
+	{
+		name: 'Apple Music',
+		url: 'https://music.apple.com/us/artist/same-as-them/1578229450',
+		icon: "mdi:apple",
+	},
+	{
+		name: 'Youtube',
+		url: 'https://www.youtube.com/@SameasThem',
+		icon: "mdi:youtube",
+	},
+	{
+		name: 'Gaana',
+		url: 'https://youtube.com/c/LittleSticks',
+		icon: "mdi:goodreads",
+	},
+	{
+		name: 'Amazon Music',
+		url: 'https://music.amazon.in/artists/B09B7BD366/same-as-them',
+		icon: "mdi:amazon",
+	},
+	{
+		name: 'Instagram',
+		url: 'https://www.instagram.com/same.as.them',
+		icon: "mdi:instagram",
+	}
 ]
 
 export const footerLists = [
@@ -33,14 +43,10 @@ export const footerLists = [
 				title: 'Landing Page 2',
 				slug: '/landing-pages/landing-2',
 			},
-      // {
-			// 	title: 'Landing Page 3',
-			// 	slug: '/landing-pages/landing-3',
-			// },
 		],
 	},
 	{
-		title: 'Company',
+		title: 'Band',
 		items: [
 			{
 				title: 'About',
@@ -67,14 +73,14 @@ export const footerLists = [
 				title: 'Style Guide',
 				slug: '/theme/style-guide',
 			},
-      {
-        title: 'Theme Setup',
-        slug: '/theme/theme-setup',
-      },
-      {
-        title: 'Customizing Odyssey',
-        slug: '/theme/customizing-odyssey',
-      }
+			{
+				title: 'Theme Setup',
+				slug: '/theme/theme-setup',
+			},
+			{
+				title: 'Customizing Odyssey',
+				slug: '/theme/customizing-odyssey',
+			}
 		],
 	},
 ];
