@@ -1,6 +1,7 @@
 ---
 import { Icon } from 'astro-icon/components'
 const { navData, rightMenu } = Astro.props;
+
 ---
 
 <script type="module">
@@ -59,7 +60,7 @@ const { navData, rightMenu } = Astro.props;
       {navData && <nav>
         <ul>
           {navData.map(navItem => (
-            (<li><a href={navItem.slug} >{navItem.title}</a></li>)
+            (<li><a href={navItem.slug}  >{navItem.title}</a></li>)
           ))}
         </ul>
       </nav>}
@@ -74,7 +75,7 @@ const { navData, rightMenu } = Astro.props;
 <style>
   header {
     width: 100%;
-    padding: 1rem 0.5rem;
+    padding: 1rem 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
