@@ -114,7 +114,7 @@ export class ThemeSwitcher extends LitElement {
 					<button
 						@click=${() => this._switchTheme()}
 						?active=${this.theme}
-						title=${`Switch Theme`}
+						title=${this.theme === 'default' ? `Take me to the dark side!` : `Show me the light!`}
 					>
 						${themes[this.theme].icon}
 					</button>
