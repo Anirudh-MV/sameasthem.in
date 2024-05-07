@@ -1,18 +1,24 @@
 ---
-import { Image } from 'astro:assets'
-import logoLight from '../assets/logo-light.svg'
-import logoDark from '../assets/logo.svg'
+import { Image } from 'astro:assets';
+import logoLight from '../assets/logo-light.svg';
+import logoDark from '../assets/logo.svg';
 ---
-<div class="logo">
-<Image 
-src={logoDark} 
-class="switch-dark" 
-alt="Same as Them" 
-title="Same as Them"
-width="200"
-/>
-<Image src={logoLight} class="switch-light" alt="Same as Them" title="Same as Them" width="200"></Image>
 
+<div class="logo">
+	<Image
+		src={logoDark}
+		class="switch-dark"
+		alt="Same as Them"
+		title="Same as Them"
+		width="200"
+	/>
+	<Image
+		src={logoLight}
+		class="switch-light"
+		alt="Same as Them"
+		title="Same as Them"
+		width="200"
+	/>
 </div>
 
 <style>
@@ -20,7 +26,7 @@ width="200"
 		width: 200px;
 		margin: 0;
 		font-family: var(--theme-font-family-serif);
-    font-size: var(--font-size-md);
+		font-size: var(--font-size-md);
 		color: inherit;
 	}
 	.logo:hover {

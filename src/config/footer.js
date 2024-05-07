@@ -2,34 +2,34 @@ export const footerSocials = [
 	{
 		name: 'Spotify',
 		url: 'https://open.spotify.com/artist/5yJJaMHAPenWk7NrAfn5ut?si=1RMUjnz5Qt-6NXfMTLSbig',
-		icon: "mdi:spotify",
+		icon: 'mdi:spotify',
 	},
 	{
 		name: 'Apple Music',
 		url: 'https://music.apple.com/us/artist/same-as-them/1578229450',
-		icon: "mdi:apple",
+		icon: 'mdi:apple',
 	},
 	{
 		name: 'Youtube',
 		url: 'https://www.youtube.com/@SameasThem',
-		icon: "mdi:youtube",
+		icon: 'mdi:youtube',
 	},
 	{
 		name: 'Gaana',
 		url: 'https://youtube.com/c/LittleSticks',
-		icon: "mdi:goodreads",
+		icon: 'mdi:goodreads',
 	},
 	{
 		name: 'Amazon Music',
 		url: 'https://music.amazon.in/artists/B09B7BD366/same-as-them',
-		icon: "mdi:amazon",
+		icon: 'mdi:amazon',
 	},
 	{
 		name: 'Instagram',
 		url: 'https://www.instagram.com/same.as.them',
-		icon: "mdi:instagram",
-	}
-]
+		icon: 'mdi:instagram',
+	},
+];
 
 export const footerLists = [
 	{
@@ -80,7 +80,7 @@ export const footerLists = [
 			{
 				title: 'Customizing Odyssey',
 				slug: '/theme/customizing-odyssey',
-			}
+			},
 		],
 	},
 ];

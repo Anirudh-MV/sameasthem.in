@@ -1,10 +1,7 @@
 import { LitElement, html, css } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 
-import {
-	classicThemeIcon,
-	darkThemeIcon,
-} from './icons';
+import { classicThemeIcon, darkThemeIcon } from './icons';
 
 const themes = {
 	default: {
@@ -110,16 +107,18 @@ export class ThemeSwitcher extends LitElement {
 	render() {
 		this.firstUpdated();
 		const themeButtons = html`
-				<div class="theme-select__container">
-					<button
-						@click=${() => this._switchTheme()}
-						?active=${this.theme}
-						title=${this.theme === 'default' ? `Take me to the dark side!` : `Show me the light!`}
-					>
-						${themes[this.theme].icon}
-					</button>
-				</div>
-			`;
+			<div class="theme-select__container">
+				<button
+					@click=${() => this._switchTheme()}
+					?active=${this.theme}
+					title=${this.theme === 'default'
+						? `Take me to the dark side!`
+						: `Show me the light!`}
+				>
+					${themes[this.theme].icon}
+				</button>
+			</div>
+		`;
 
 		return html` <div class="theme-switcher__container">${themeButtons}</div> `;
 	}
