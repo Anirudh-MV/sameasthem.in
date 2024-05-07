@@ -37,6 +37,14 @@
 		sans-serif;
 }
 
+.switch-light{
+	display: inherit;
+}
+
+.switch-dark{
+	display: none;
+}
+
 [data-theme='default'] {
 	color-scheme: light;
 	/* Theme Colors */

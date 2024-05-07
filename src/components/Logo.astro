@@ -1,8 +1,18 @@
 ---
+import { Image } from 'astro:assets'
+import logoLight from '../assets/logo-light.svg'
+import logoDark from '../assets/logo.svg'
 ---
 <div class="logo">
-<img src="/logo.svg" class="switch-dark" alt="Same as Them" title="Same as Them"></img>
-<img src="/logo-light.svg" class="switch-light" alt="Same as Them" title="Same as Them"></img>
+<Image 
+src={logoDark} 
+class="switch-dark" 
+alt="Same as Them" 
+title="Same as Them"
+width="200"
+/>
+<Image src={logoLight} class="switch-light" alt="Same as Them" title="Same as Them" width="200"></Image>
+
 </div>
 
 <style>

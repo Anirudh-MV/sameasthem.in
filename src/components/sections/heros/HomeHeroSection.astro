@@ -1,8 +1,7 @@
 ---
-import { Icon } from 'astro-icon/components';
 import { Container, Button } from '@components/odyssey-theme';
-import settings from '../../../config/settings.js';
-import {ThemeSwitcher} from '../../theme-switcher/theme-switcher';
+import albumArt from '../../../assets/album1.jpg'
+import { Image } from 'astro:assets'
 ---
 
 <Container>
@@ -15,8 +14,8 @@ import {ThemeSwitcher} from '../../theme-switcher/theme-switcher';
 		</div>
 		<div class="hero-section__image">
 				<picture>
-					<img
-						src="/assets/images/album1.jpg"
+					<Image
+						src={albumArt}
 						alt="Same as Them"
 						id="home-hero-image"
 					/>
