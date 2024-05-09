@@ -26,6 +26,9 @@ export { default as CtaCardSection } from './sections/CtaCardSection.astro';
 export { default as BlogPostsList } from './blog/BlogPostsList.astro';
 export { default as BlogPostPreview } from './blog/BlogPostPreview.astro';
 
+export { default as VidCardsList } from './vidcard/VidCardsList.astro';
+export { default as VidCardPreview } from './vidcard/VidCardPreview.astro';
+
 // Form Fields
 export { default as FormInput } from './form-fields/FormInput.astro';
 export { default as FormTextarea } from './form-fields/FormTextarea.astro';

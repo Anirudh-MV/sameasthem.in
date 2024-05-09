@@ -3,7 +3,7 @@ import { parse, isBefore } from 'date-fns';
 import {
 	Container,
 	TextCardSection,
-	BlogPostsList,
+	VidCardsList,
 } from '@components/odyssey-theme';
 import Layout from '../../layouts/Page.astro';
 import NewsletterForm from '../../components/forms/NewsletterForm.astro';
@@ -44,7 +44,7 @@ const seo = {
 		</TextCardSection>
 		<section class="blog-posts-list__section">
 			<h2>Recent Posts</h2>
-			<BlogPostsList {posts} />
+			<VidCardsList {posts} />
 		</section>
 	</Container>
 </Layout>

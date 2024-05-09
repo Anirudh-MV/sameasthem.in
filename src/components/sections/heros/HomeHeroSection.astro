@@ -2,25 +2,46 @@
 import { Container, Button } from '@components/odyssey-theme';
 import albumArt from '../../../assets/album1.jpg';
 import { Image } from 'astro:assets';
-const youtubeUrl = 'https://www.youtube.com/watch?v=hXU1izC6BQI';
+const youtubeUrl =
+	'https://www.youtube-nocookie.com/embed/hXU1izC6BQI?si=kK5XFjm2ZeYAdhyc';
+import backgroundImage from '../../../assets/background.jpg';
 ---
 
-<Container>
+<Container class="background-container">
 	<section class="hero-section__section">
 		<div class="hero-section__text">
 			<h1>Gaako</h1>
-			<p>Listen to our latest track down below</p>
-			<iframe
+			<p>Listen to our latest track down below
+				<iframe
 				width="560"
 				height="315"
-				src="https://www.youtube-nocookie.com/embed/hXU1izC6BQI?si=kK5XFjm2ZeYAdhyc"
+				src={youtubeUrl}
 				title="YouTube video player"
 				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 				referrerpolicy="strict-origin-when-cross-origin"
 				allowfullscreen></iframe>
+			</p>
 		</div>
 		<div class="hero-section__image">
 			<Image src={albumArt} alt="Same as Them" id="home-hero-image" />
+		</div>
+	</section>
+	<section class="hero-section__section">
+		<div class="hero-section__image">
+			<Image src={albumArt} alt="Same as Them" id="home-hero-image" />
+		</div>
+		<div class="hero-section__text">
+			<h1>Gaako</h1>
+			<p>Listen to our latest track down below
+				<iframe
+				width="560"
+				height="315"
+				src={youtubeUrl}
+				title="YouTube video player"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+				referrerpolicy="strict-origin-when-cross-origin"
+				allowfullscreen></iframe>
+			</p>
 		</div>
 	</section>
 	<section class="hero-section__section">
